@@ -1,0 +1,14 @@
+execve("./no_libc_greet", ["./no_libc_greet", "Vova"], 0x7fffef5a8548 /* 68 vars */) = 0
+arch_prctl(0x3001 /* ARCH_??? */, 0x7fff56648cf0) = -1 EINVAL (Invalid argument)
+brk(NULL)                               = 0x2058000
+brk(0x20591c0)                          = 0x20591c0
+arch_prctl(ARCH_SET_FS, 0x2058880)      = 0
+uname({sysname="Linux", nodename="ancient", ...}) = 0
+readlink("/proc/self/exe", "/home/gusevskiy/Documents/super_"..., 4096) = 57
+brk(0x207a1c0)                          = 0x207a1c0
+brk(0x207b000)                          = 0x207b000
+mprotect(0x4bd000, 12288, PROT_READ)    = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+write(1, "Hello, dear Vova\n", 17)      = 17
+exit_group(0)                           = ?
++++ exited with 0 +++
